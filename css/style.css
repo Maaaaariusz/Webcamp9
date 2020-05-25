@@ -1,0 +1,27 @@
+.banners{
+    flex-wrap: wrap;
+    width: 1200px;
+}
+.banner{
+    padding: 5px;
+}
+.banner a{
+    display: flex;
+}
+.banner img{
+    max-width: 100%;
+}
+
+
+@media screen and (min-width: 757px){
+    
+}
+@media screen and (min-width: 979px){
+    .container{
+        
+        justify-content: center;
+    }
+   .banner a{
+    height: 400px;
+   }
+}
