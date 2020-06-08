@@ -1,27 +1,364 @@
-.banners{
-    flex-wrap: wrap;
-    width: 1200px;
-}
-.banner{
-    padding: 5px;
-}
-.banner a{
-    display: flex;
-}
-.banner img{
-    max-width: 100%;
-}
-
-
-@media screen and (min-width: 757px){
-    
-}
-@media screen and (min-width: 979px){
-    .container{
-        
-        justify-content: center;
+    img {
+        max-width: 100%;
     }
-   .banner a{
-    height: 400px;
-   }
-}
+    
+    ul {
+        list-style-type: none;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    .none {
+        display: none;
+    }
+    
+    .wrap {
+        flex-wrap: wrap;
+    }
+    
+    .uppercase {
+        text-transform: uppercase;
+    }
+    
+    .banner {
+        padding: 10px;
+    }
+    
+    .banner a {
+        position: relative;
+    }
+    
+    .banner span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        font-weight: 500;
+        text-align: center;
+        color: #231F20;
+    }
+    
+    .buttons_banner {
+        margin: 9px auto;
+    }
+    
+    .buttons_banner>p {
+        text-align: center;
+        font-size: 2rem;
+        line-height: 1.3;
+        letter-spacing: 0.31rem;
+    }
+    
+    .buttons_banner>div {
+        text-align: center;
+        padding-top: 10px;
+        letter-spacing: 1.5rem;
+    }
+    
+    .icon-facebook,
+    .icon-instagram {
+        font-size: 4rem;
+        color: #231F20;
+    }
+    
+    .icon-right-open,
+    .icon-left-open {
+        font-size: 2rem;
+    }
+    
+    .slider-inst {
+        padding: 12px 43px 27px 43px;
+    }
+    
+    .slick-next:before,
+    .slick-prev:before {
+        display: none;
+    }
+    
+    .slick-prev {
+        left: 3px;
+        color: #CFCFCF;
+        display: flex;
+        align-items: center;
+    }
+    
+    .slick-next {
+        right: 11px;
+        color: #CFCFCF;
+        display: flex;
+        align-items: center;
+    }
+    
+    .icon-menu:before {
+        font-size: 2.3rem;
+    }
+    
+    .instagram {
+        padding: 17px 5px;
+    }
+    
+    .instagram div {
+        padding: 7px;
+    }
+    
+    .description {
+        height: 342px;
+        padding-bottom: 10px;
+    }
+    
+    .description p {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 8px 7px;
+        line-height: 1.7;
+        overflow: hidden;
+    }
+    
+    .newsletter {
+        margin-top: 10px;
+        padding: 34px 0;
+        background-color: #F5F5F5;
+        justify-content: center;
+        align-items: center;
+        color: #231F20;
+    }
+    
+    .newsletter p {
+        width: 100%;
+        font-size: 2rem;
+        letter-spacing: 3px;
+        text-align: center;
+        padding: 0 30px;
+        line-height: 1.3;
+    }
+    
+    .newsletter>p:last-of-type {
+        letter-spacing: 0;
+        padding: 2px 65px;
+    }
+    
+    .newsletter a {
+        font-size: 1.3rem;
+        text-decoration: none;
+        background-color: #231F20;
+        padding: 13px 30px;
+        color: #fff;
+        font-weight: 900;
+        margin-top: 9px;
+        margin-bottom: 1px;
+    }
+    
+    footer>nav {
+        background-color: #231F20;
+        text-align: center;
+    }
+    
+    footer>nav>ul {
+        width: 100%;
+        padding-top: 5px;
+        padding-bottom: 33px;
+    }
+    
+    footer>nav>ul>li {
+        padding-top: 26px;
+    }
+    
+    footer>nav>ul>li>a {
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: 600;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }
+    
+    footer>nav>ul>li>ul {
+        display: none;
+    }
+    
+    footer>nav>ul>li>ul.active {
+        display: block;
+    }
+    
+    footer>nav>ul>li>ul>li {
+        padding-top: 14px;
+        line-height: 1.3;
+    }
+    
+    footer>nav>ul>li>ul>li:first-child {
+        padding-top: 19px;
+    }
+    
+    footer>nav>ul>li>ul>li:last-child {
+        padding-bottom: 10px;
+    }
+    
+    footer>nav>ul>li>ul>li>a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.3rem;
+    }
+    
+    footer img {
+        margin: 18px auto;
+    }
+    
+    @media screen and (min-width: 757px) {}
+    
+    @media screen and (min-width: 979px) {
+        .none {
+            display: block;
+        }
+        .banners {
+            max-width: 1640px;
+            margin: 0 auto;
+        }
+        .banner span {
+            font-size: 2.5rem;
+            justify-content: center;
+        }
+        .buttons_banner>p {
+            letter-spacing: 0.35rem;
+            margin-top: 55px;
+        }
+        .buttons_banner:first-child>p {
+            font-size: 2.5rem;
+            letter-spacing: 0.37rem;
+            margin-bottom: 25px;
+            margin-top: 0;
+        }
+        .slider-inst {
+            max-width: 1670px;
+            margin: 0 auto;
+            margin-top: 36px;
+            padding: 0;
+        }
+        .slick-slide {
+            margin-right: 15px !important;
+            margin-left: 15px !important;
+        }
+        .icon-right-open,
+        .icon-left-open {
+            font-size: 5rem;
+        }
+        .slick-prev {
+            left: 25px;
+            color: #fff;
+            z-index: 10;
+        }
+        .slick-next {
+            right: 65px;
+            color: #fff;
+            z-index: 10;
+        }
+        .instagram {
+            padding: 25px 5px 5px 5px;
+            max-width: 1680px;
+            margin: 0 auto;
+        }
+        .instagram div {
+            padding: 15px;
+        }
+        .description {
+            max-width: 1360px;
+            margin: 0 auto;
+            margin-bottom: 25px;
+            height: 155px;
+        }
+        .description p {
+            padding: 15px 0;
+        }
+        .newsletter p {
+            margin-top: 13px;
+            font-size: 2.5rem;
+            letter-spacing: 4px;
+            line-height: 1;
+        }
+        .newsletter>p:last-of-type {
+            font-size: 2rem;
+            margin-top: 3px;
+            letter-spacing: 0;
+        }
+        .newsletter a {
+            font-size: 1.2rem;
+            padding: 14px 35px;
+            margin-top: 26px;
+            margin-bottom: 7px;
+        }
+        footer>nav>ul {
+            display: flex;
+            margin: 0 auto;
+            max-width: 1120px;
+            padding-top: 0;
+            padding-bottom: 8px;
+        }
+        footer>nav>ul>li {
+            padding-top: 41px;
+            width: 25%;
+        }
+        footer>nav>ul>li>a {
+            letter-spacing: 2px;
+            padding-top: 42px;
+        }
+        footer>nav>ul>li>ul {
+            display: block;
+        }
+        footer>nav>ul>li>ul>li {
+            padding-top: 14px;
+        }
+        footer>nav>ul>li>ul>li:last-child {
+            padding-bottom: 30px;
+        }
+        .menu_contact {
+            margin: 0 auto;
+            max-width: 1280px;
+        }
+        .menu_contact>div:first-child {
+            display: flex;
+            padding-left: 10px;
+        }
+        .menu_contact>div:first-child>a {
+            display: flex;
+            align-items: center;
+            color: #000000;
+            padding-left: 20px;
+        }
+        .menu_contact>div:first-child>a>i {
+            font-size: 1.4rem;
+        }
+        .menu_contact>div:first-child>a>p {
+            font-size: 1.3rem;
+            padding-left: 6px;
+        }
+        .menu_contact>div:last-child {
+            justify-content: flex-end;
+        }
+        .menu_banners {
+            text-align: center;
+        }
+        .menu_banners img {
+            margin: 16px;
+        }
+        footer img {
+            margin: 25px 98px;
+        }
+        .icon-layer-2 {
+            color: #fff;
+            border-radius: 50%;
+            background-color: #3A559F;
+            line-height: 1.5;
+        }
+        .icon-right-open-big {
+            color: #3A559F;
+        }
+        .facebook {
+            color: #3A559F;
+        }
+    }
